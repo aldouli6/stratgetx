@@ -61,7 +61,6 @@ class CharacterController extends GetxController {
   }
 
   void filter(String filter) {
-    box.erase();
     // ignore: invalid_use_of_protected_member
     characterListFiltered.value = characterList.value.where((char) {
       final charName = char.name.toLowerCase();
