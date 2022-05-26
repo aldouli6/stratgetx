@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:stratgetx/controller/charactercontroller.dart';
 import 'package:stratgetx/views/character.dart';
 
+// ignore: must_be_immutable
 class Home extends GetView<CharacterController> {
   Home({Key? key}) : super(key: key);
   @override
@@ -63,7 +64,7 @@ class Home extends GetView<CharacterController> {
                             elevation: 8,
                             child: ListTile(
                               title: Text(char.name),
-                              trailing: Icon(
+                              trailing: const Icon(
                                 Icons.arrow_forward_ios,
                               ),
                               leading: ClipRRect(
